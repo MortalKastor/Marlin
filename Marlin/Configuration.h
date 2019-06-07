@@ -616,7 +616,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 78.74, 78.74, 2560, 105 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 81.15, 81.49, 2585, 105 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1195,9 +1195,9 @@
 
 #if ENABLED(SKEW_CORRECTION)
   // Input all length measurements here:
-  #define XY_DIAG_AC 282.8427124746
-  #define XY_DIAG_BD 281.8196945719
-  #define XY_SIDE_AD 200
+  #define XY_DIAG_AC 275.4
+  #define XY_DIAG_BD 279.6
+  #define XY_SIDE_AD 196.2
 
   // Or, set the default skew factors directly here
   // to override the above measurements:
