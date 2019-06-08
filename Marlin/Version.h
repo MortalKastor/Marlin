@@ -26,6 +26,8 @@
  * directive USE_AUTOMATIC_VERSIONING.
  */
 
+#define USE_AUTOMATIC_VERSIONING
+
 #if ENABLED(USE_AUTOMATIC_VERSIONING)
 
   #include "_Version.h"
@@ -70,7 +72,7 @@
   /**
    * Defines a generic printer name to be output to the LCD after booting Marlin.
    */
-  #define MACHINE_NAME "3D Printer"
+  #define MACHINE_NAME "Geeetech i3 Pro B"
 
   /**
    * The SOURCE_CODE_URL is the location where users will find the Marlin Source
@@ -78,7 +80,7 @@
    * has a distinct Github fork— the Source Code URL should just be the main
    * Marlin repository.
    */
-  #define SOURCE_CODE_URL "https://github.com/MarlinFirmware/Marlin"
+  #define SOURCE_CODE_URL "https://github.com/MortalKastor/Marlin"
 
   /**
    * Default generic printer UUID.
