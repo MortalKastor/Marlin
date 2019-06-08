@@ -31,6 +31,10 @@ SOURCE_CODE_URL=$(awk -F'"' \
   '/#define SOURCE_CODE_URL/{ print $2 }' < "${DIR}/Version.h")
 WEBSITE_URL=$(awk -F'"' \
   '/#define WEBSITE_URL/{ print $2 }' < "${DIR}/Version.h")
+REQUIRED_CONFIGURATION_H_VERSION=$(awk -F' ' \
+  '/#define REQUIRED_CONFIGURATION_H_VERSION/{ print $3 }' < "${DIR}/Version.h")
+REQUIRED_CONFIGURATION_ADV_H_VERSION=$(awk -F' ' \
+  '/#define REQUIRED_CONFIGURATION_ADV_H_VERSION/{ print $3 }' < "${DIR}/Version.h")
 
 cat > "${DIR}/_Version.h" <<EOF
 /**
@@ -52,4 +56,6 @@ cat > "${DIR}/_Version.h" <<EOF
 #define SOURCE_CODE_URL "${SOURCE_CODE_URL}"
 #define DEFAULT_MACHINE_UUID "${DEFAULT_MACHINE_UUID}"
 #define WEBSITE_URL "${WEBSITE_URL}"
+#define REQUIRED_CONFIGURATION_H_VERSION ${REQUIRED_CONFIGURATION_H_VERSION}
+#define REQUIRED_CONFIGURATION_ADV_H_VERSION ${REQUIRED_CONFIGURATION_ADV_H_VERSION}
 EOF
