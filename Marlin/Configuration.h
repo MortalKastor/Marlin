@@ -371,9 +371,9 @@
                                   // is more than PID_FUNCTIONAL_RANGE then the PID will be shut off and the heater will be set to min/max.
 
   // Geeetech MK8 Extruder
-  #define DEFAULT_Kp 12.33
-  #define DEFAULT_Ki 0.51
-  #define DEFAULT_Kd 74.50
+  #define DEFAULT_Kp 13.60
+  #define DEFAULT_Ki 0.57
+  #define DEFAULT_Kd 81.07
 
   // CTC MK8 Extruder
   //#define DEFAULT_Kp 19.86
